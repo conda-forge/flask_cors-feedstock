@@ -5,7 +5,7 @@ Home: https://github.com/corydolphin/flask-cors
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Cross Origin Resource Sharing ( CORS ) support for Flask
 

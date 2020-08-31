@@ -1,6 +1,6 @@
 {% set name = "Flask-Cors" %}
 {% set pname = "flask_cors" %}
-{% set version = "3.0.8" %}
+{% set version = "3.0.9" %}
 
 package:
   name: {{ pname|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 72170423eb4612f0847318afff8c247b38bd516b7737adfc10d1c2cdbb382d16
+  sha256: 6bcfc100288c5d1bcb1dbb854babd59beee622ffd321e444b05f24d6d58466b8
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   home: https://github.com/corydolphin/flask-cors
   license_file: LICENSE
   license_family: MIT
-  summary: 'Cross Origin Resource Sharing ( CORS ) support for Flask'
+  summary: Cross Origin Resource Sharing ( CORS ) support for Flask
 
   description: |
     A Flask extension for handling Cross Origin Resource Sharing (CORS), making cross-origin AJAX possible.
