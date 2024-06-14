@@ -1,6 +1,6 @@
 {% set name = "Flask-Cors" %}
 {% set pname = "flask_cors" %}
-{% set version = "3.0.10" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ pname|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b60839393f3b84a0f3746f6cdca56c1ad7426aa738b70d6c61375857823181de
+  sha256: f268522fcb2f73e2ecdde1ef45e2fd5c71cc48fe03cffb4b441c6d1b40684eb0
 
 build:
   noarch: python
@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - flask >=0.9
     - six
 
