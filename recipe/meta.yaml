@@ -1,14 +1,14 @@
 {% set name = "Flask-Cors" %}
 {% set pname = "flask_cors" %}
-{% set version = "4.0.0" %}
+{% set version = "5.0.1" %}
 
 package:
   name: {{ pname|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f268522fcb2f73e2ecdde1ef45e2fd5c71cc48fe03cffb4b441c6d1b40684eb0
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') | lower }}-{{ version }}.tar.gz
+  sha256: 6ccb38d16d6b72bbc156c1c3f192bc435bfcc3c2bc864b2df1eb9b2d97b2403c
 
 build:
   noarch: python
